@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4e31e56-b000-4d82-8eac-37a4d9c1dc54" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hello.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,12 +16,8 @@
       <file leaf-file-name="Hello.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <element signature="e#65#66#0" expanded="true" />
-                <element signature="e#108#109#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -158,6 +154,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -193,12 +190,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#65#66#0" expanded="true" />
-            <element signature="e#108#109#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
