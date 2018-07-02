@@ -18,12 +18,6 @@ public class Samsung implements Phone {
     }
 }
 
-interface Phone
-{
-    void call();
-    void sms();
-}
-
 // in git ignore
 //.idea target out
 //pwd
