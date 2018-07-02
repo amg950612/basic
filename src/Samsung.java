@@ -1,11 +1,11 @@
 
-public class Hello implements Phone {
+public class Samsung implements Phone {
 
     public static void main(String[] args) {
 
-        Hello hello = new Hello();
-        hello.call();
-        hello.sms();
+        Samsung samsung = new Samsung();
+        samsung.call();
+        samsung.sms();
     }
     @Override
     public void call() {
