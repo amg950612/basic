@@ -22,7 +22,7 @@ public class HockeyMatch implements Hockey {
 
         System.out.println("First tierce: ");
 
-        match.counting("normal");
+        match.counting("first");
 
         match.teamsScoredFirstTierce();
 
@@ -32,7 +32,7 @@ public class HockeyMatch implements Hockey {
 
         System.out.println("Second tierce: ");
 
-        match.counting("normal");
+        match.counting("second");
 
         match.teamsScoredSecondTierce();
 
@@ -42,7 +42,7 @@ public class HockeyMatch implements Hockey {
 
         System.out.println("Third tierce: ");
 
-        match.counting("normal");
+        match.counting("third");
 
         match.teamsScoredThirdTierce();
 
@@ -69,19 +69,40 @@ public class HockeyMatch implements Hockey {
     public void counting(String time)  {
 
         try{
-            if(time.equals("normal")){
+            if(time.equals("first")){
             for(int i=1;i<=20;i++)
             {
-                System.out.println(i);
+                System.out.println(i + "min");
                 Thread.sleep(100);}
             }
-            else
-            for(int i=1;i<=5;i++)
-            {
-                System.out.println(i);
-                Thread.sleep(100);
+
+            else if(time.equals("second")){
+                for(int i=20;i<=40;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);}
             }
 
+            else if(time.equals("third")){
+                for(int i=40;i<=60;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);}
+            }
+
+            else if (time.equals("extra1")){
+            for(int i=60;i<=65;i++)
+            {
+                System.out.println(i + "min");
+                Thread.sleep(100);
+            }}
+
+            else if (time.equals("extra2")){
+                for(int i=65;i<=70;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);
+                }}
 
         } catch(InterruptedException e) {}
     }
@@ -155,12 +176,12 @@ public class HockeyMatch implements Hockey {
             if(tierce.equals("Third") && homeTeamScore==visitingTeamScore)
             {
                 System.out.println("First extra time: ");
-                counting("extra");
+                counting("extra1");
                 extraTime();
                 Thread.sleep(2000);
 
                 System.out.println("First extra time: ");
-                counting("extra");
+                counting("extra2");
                 extraTime();
                 Thread.sleep(2000);
 

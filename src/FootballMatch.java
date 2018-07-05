@@ -22,7 +22,7 @@ public class FootballMatch implements Football {
 
         System.out.println("First half: ");
 
-        match.counting("normal");
+        match.counting("first");
 
         match.teamsScoredFirstHalf();
 
@@ -32,7 +32,7 @@ public class FootballMatch implements Football {
 
         System.out.println("Second half: ");
 
-        match.counting("normal");
+        match.counting("second");
 
         match.teamsScoredSecondHalf();
 
@@ -59,18 +59,31 @@ public class FootballMatch implements Football {
     public void counting(String time)  {
 
         try{
-            if(time.equals("normal")){
+            if(time.equals("first")){
             for(int i=1;i<=45;i++)
             {
-                System.out.println(i);
+                System.out.println(i + "min");
                 Thread.sleep(100);
             }}
-            else
-            for(int i=1;i<=15;i++)
-            {
-                System.out.println(i);
-                Thread.sleep(100);
-            }
+
+            else if (time.equals("second")){
+                for(int i=45;i<=90;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);
+                }}
+            else if (time.equals("extra1")){
+                for(int i=90;i<=105;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);
+                }}
+            else if (time.equals("extra2")){
+                for(int i=105;i<=120;i++)
+                {
+                    System.out.println(i + "min");
+                    Thread.sleep(100);
+                }}
 
 
         }catch(InterruptedException e ) {}
@@ -133,12 +146,12 @@ public class FootballMatch implements Football {
             if(half.equals("Second") && homeTeamScore==visitingTeamScore)
             {
                 System.out.println("First extra time: ");
-                counting("extra");
+                counting("extra1");
                 extraTime();
                 Thread.sleep(2000);
 
                 System.out.println("Second extra time: ");
-                counting("extra");
+                counting("extra2");
                 extraTime();
                 Thread.sleep(2000);
 
