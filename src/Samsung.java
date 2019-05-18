@@ -18,6 +18,7 @@ public class Samsung implements Phone {
     }
 }
 
+
 // in git ignore
 //.idea target out
 //pwd
